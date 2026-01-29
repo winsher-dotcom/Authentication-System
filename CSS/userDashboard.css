@@ -1,0 +1,115 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f5f6fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: #fff;
+    width: 350px;
+    max-width: 90%;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+    position: relative;
+}
+
+/* Logout Button */
+.profile-card button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.profile-card button:hover {
+    background-color: #c9302c;
+}
+
+/* Avatar */
+.avatar {
+    width: 100px;
+    height: 100px;
+    background-color: #3389C4;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px auto;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Profile Heading */
+.profile-card h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.profile-card h3 {
+    margin-bottom: 10px;
+    color: #3389C4;
+    letter-spacing: 1px;
+}
+
+/* Info Paragraphs */
+.profile-card p {
+    background-color: #f1f3f6;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.profile-card p span {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .profile-card {
+        padding: 20px 15px;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+        font-size: 2em;
+    }
+
+    .profile-card h2 {
+        font-size: 20px;
+    }
+
+    .profile-card h3 {
+        font-size: 18px;
+    }
+
+    .profile-card p {
+        font-size: 13px;
+    }
+}
